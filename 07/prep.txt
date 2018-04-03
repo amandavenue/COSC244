@@ -1,0 +1,29 @@
+Q1. meant for reading in bytes and decoding them into characters using a
+    specified charset
+    
+Q2. for top efficiency, we should wrap an inputstreamreader within a buffer
+    reader eg.
+    BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
+
+Q3. readLine() returns a String or null
+
+Q4. Prints a String and then terminated the line. Returns void
+
+Q5. Creates a server socket, bound into the specified port
+
+Q6. Listens for a connection to be made to this socket and accepts it
+
+Q7. Socket(InetAddress address, int port);
+
+Q8. Returns an input stream for this socket
+
+Q9. getOutputStream()
+
+Q10. initialized so that it represents the time at while it was allocated,
+     measured to the nearest millisecond
+
+Q11. Date date = new Date();
+     System.out.println(date.toString());
+
+Q12. <port> [host] means we must alwasy know what the port is, but the host is
+     optional 

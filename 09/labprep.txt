@@ -1,0 +1,29 @@
+Q1. so that no other threads can modify clients while they perform their code
+
+Q2. line 15 start()
+
+Q3. 32-37
+
+Q4. chat server started
+
+Q5. accepted connection from client 0
+
+Q6. welcome you are client 0
+
+Q7. accepted connection from client 1
+
+Q8. welcome you are client 1
+
+Q9. client_1: Hello from client 1
+
+Q10. same thing
+
+Q11.sending 'message' from client 1 to : [client0, client1, client2]
+
+Q12. client_3 has closed connection
+
+Q13. client_1: hey
+
+Q14. sending 'message' from client 1 to : [client0, client1]
+
+Q15. client3

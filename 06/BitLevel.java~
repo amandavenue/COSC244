@@ -1,0 +1,41 @@
+import java.io.*;
+import java.util.*;
+
+public class BitLevel{
+    public static void main(String args[]){
+
+        String infile = "";
+        String outfile = "";
+
+        String keyString;
+        byte [] key;
+        int pos = 0;
+
+        System.out.println("Enter Key: ");
+        Scanner sc = new SCanner (System.in);
+        keyString = sc.nextLine();
+        key = keyString.getBytes();
+
+        try{
+            FileInputStream in = new FileInputStream(infile);
+            FileOutputStream out = new FileOutputStream(outfile);
+
+            int b = in.read();
+
+            while (b != -1){
+
+                if (pos >= keyString.length()){
+                    pos = 0;
+                }
+
+                out.write(key[pos]^b);
+                pos++;
+                out.flush();
+                b = in.read();
+            }
+            out.close();
+        } catch (IOException e){
+            System.out.print("IO Exception " + e);
+        }
+    }
+}

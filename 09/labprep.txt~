@@ -1,0 +1,5 @@
+Q1. so that no other threads can modify clients while they perform their code
+
+Q2. line 15 start()
+
+Q3. 32-37

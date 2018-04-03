@@ -1,0 +1,38 @@
+import java.util.*;
+import java.io.*;
+
+public class Caesar{
+    public static void main(String args[]){
+
+        InputStream in = System.in;
+        OutputStream out = System.out;
+
+        int rot = 0;
+        int count;
+
+        if (args.length > 0){
+            try{
+                rot = Integer.parseInt(args[0]);
+            } catch (NumberFormatException e){
+                System.out.print("Argument " + args[0] + " must be an Integer");
+                System.exit(0);
+            }
+        } else {
+            System.out.print("Enter an Integer into the command line");
+        }
+
+        try{
+            while ((count = in.read()) != -1){
+                count += rot;
+                if (count > 255){
+                    count = count % 256;
+                }
+                out.write(count);
+                out.flush();
+            }
+            out.close();
+        } catch (IOException e){
+            System.out.print("IO Exception caught " + e);
+        }
+    }
+}

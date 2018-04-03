@@ -1,0 +1,19 @@
+import java.util.*;
+
+/** simple version of program 2
+    reads and writes one line at a time and prints out uppercase
+    @author Amanda Veldman
+*/
+
+public class Program3{
+    public static void main (Strng [] args){
+
+        scanner sc = new Scanner(System.in);
+        String input;
+
+        while (sc.hasNextLine()){
+            input = sc.nextLine();
+            System.out.println(input.toUpperCase());
+        }
+    }
+}

@@ -1,0 +1,6 @@
+1. returns the local port number (int)
+2. returns the address that the socket is connected to (InetAddress)
+3. returns the remote port number the socket is connected to (int)
+4. tells the user the info above when a client connects
+5. prints the info about the new client to the chat server window
+6. 

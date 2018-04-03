@@ -1,0 +1,20 @@
+Q1. ^
+Q2. meant for readinf streams of raw bytes such as image data
+Q3. FileInputStream fi = new FileInputStream(filename.txt);
+Q4. read() - returns an int
+Q5. meant for writing streams of raw bytes such as image data
+Q6. FileOutputStream fo = new FileOutputStream(filename.txt);
+Q7. write(int b);
+Q8. close();
+Q9. public class Scanprint{
+           public static void main (String[] args){
+
+                  Scanner sc = new Scanner(System.in);
+                  String word = sc.next();
+                  int num = sc.next();
+
+                  for (int i = 0; i < num; i++){
+                      System.out.print(word + " ");
+                  }
+           }
+    }
